@@ -17,16 +17,16 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="" class="nav__logo">Kikim</a>
+                    <a href="index.html" class="nav__logo">Kikim</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#Home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#Background" class="nav__link">Background</a></li>
-                        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="home.html" class="nav__link ">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="background.html" class="nav__link">Background</a></li>
+                        <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -35,24 +35,97 @@
                 </div>
             </nav>
         </header>
-
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background: #f4f4f4;
+            }
+            .home {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px 20px;
+            }
+            .home__text {
+                flex: 1;
+                text-align: left;
+                padding-left: 50px;
+                max-width: 500px;
+            }
+            .home__title {
+                font-size: 3rem;
+                font-weight: 600;
+                color: #333;
+            }
+            .home__subtitle {
+                font-size: 2rem;
+                font-weight: 400;
+                color: #555;
+            }
+            .image__container {
+                flex: 1;
+                text-align: center;
+                padding-right: 50px;
+            }
+            .image__title {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: 15px;
+                color: #333;
+            }
+            .home__img {
+                width: 250px;
+                height: auto;
+                border-radius: 15px;
+                overflow: hidden;
+                border: 5px solid #333;
+                display: inline-block;
+            }
+            .home__img img {
+                width: 100%;
+                display: block;
+            }
+            @media screen and (max-width: 768px) {
+                .home {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .home__text {
+                    padding-left: 0;
+                    max-width: 100%;
+                }
+                .home__title {
+                    font-size: 2.5rem;
+                }
+                .home__subtitle {
+                    font-size: 1.8rem;
+                }
+                .image__container {
+                    padding-right: 0;
+                }
+                .home__img {
+                    width: 70%;
+                }
+            }
+        </style>
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                   <p><h1 class="home__title"><span>HELLO</h1></p>
-                    <p><h2 class="home__title"><span>MY</h2></p>
-                    <p><h2 class="home__title"><span>PAGE</h2></p>
-                   
-                            
-                    <div class="home__scroll">
-                        <a href="assets/css/styles.css" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Get to know</a>
+            <main class="l-main">
+                <section class="home" id="home">
+                    <div class="home__text">
+                        <h1 class="home__title">Welcome to</h1>
+                        <h2 class="home__subtitle">Kimberly Venus' Page</h2>
                     </div>
-
-                    <img src="assets/img/bg1.jpeg" alt="" class="home__img">
-
-                </div>
-            </section>
+                    <div class="image__container">
+                        <div class="home__img">
+                            <img src="assets/img/kim.abt-1.jpg" alt="Kimberly Venus">
+                        </div>
+                    </div>
+                </section>
+            </main>
             
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
@@ -85,21 +158,33 @@
                             <h2>Biodata</h2>
                             <a href="#demo" class="btn btn-danger" data-toggle="collapse">click Me</a>
                             <div id="demo" class="collapse">
-                               <p> Nickname: Kim, Kikim <p/>
-                               <p> Marital status: Single</p>
-                                   <p>Language spoken: English, bahasa Malaysia, Bidayuh, Iban</p>
-                                   <p> Height: 155cm</p>
-                                   <p> Weight: 55Kg</p>
-                                   <p> Eye colour: Brown</p/>
-                                   <p> Hair colour: Brown</p>
-                                   <p>Fav food: Nasi goreng </p>
-                                   <p> Fav Song: the world is ugly by my chemical romance </p>
-                                   <audio controls>
-                                    <source src="assets/img/My Chemical Romance - Number Three - 01 - The World Is Ugly.mp3" type="audio/ogg">
-                                    <source src="assets/img/My Chemical Romance - Number Three - 01 - The World Is Ugly.mp3" type="audio/mpeg">
-                                  Your browser does not support the audio element.
-                                  </audio>
-                                    <p>Fav colour: Red </p>
+                                <br>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <th>Nickname</th>
+                                            <th>Age</th>
+                                            <th>Status</th>
+                                            <th>Fav food</th>
+                                            <th>Hobbies</th>
+                                            <th>Fav Song</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Kim or Kikim</td>
+                                            <td>20 (2004)</td>
+                                            <td>in relationship</td>
+                                            <td>Nasi goreng</td>
+                                            <td>Reading, singing, Coding</td>
+                                            <td>The world is ugly by Chemical Romance</td>
+                                            <td><audio controls>
+                                                <source src="my.1.mp3" type="audio/ogg">
+                                                <source src="my.1.mp3" type="audio/mpeg">
+                                              Your browser does not support the audio element.
+                                              </audio>
+                                              </td>
+                                        </tr>
+                                    </table>
+                                </table>
 
                             </div>
                           </div>
